@@ -336,6 +336,7 @@ a {
 @media only screen and (max-width: 768px) {
     .blog-item {
         width: 90% !important;
+        padding: 10px !important;
     }
     .article-title {
         font-size: 2rem;
@@ -503,6 +504,10 @@ div div section {
 @media only screen and (max-width: 768px) {
     .ushualod-link-img {
         width: 30px !important;
+    }
+    .duck-this-div {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
 
