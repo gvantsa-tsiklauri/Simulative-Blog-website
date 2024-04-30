@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: #C62641;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.login-form, .add-blog-form {
+    box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.30);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center !important;
+    background-color: white;
+    padding: 40px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-form, .add-blog-form{
+        max-width: 90% !important;
+    }
+    .login-title {
+        font-size: 17px !important;
+    }
+}
+.main-login-box {
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('components/images/blurred-bg-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+.login-title{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C62641;
+}
+.sign-up-text {
+    display: flex;
+}
+
+
+/*NAVIGACIA AQEDAN IWYEBA*/
+
+
+.navigation {
+    background-color: #C62641;
+}
+
+.nav-title {
+    color: white;
+    font-family: Arial;
+    font-size: 25px;
+
+}
+.nav-title:hover {
+    color: white !important;
+}
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+.nav-link:hover {
+    color: white;
+}
+.nav-item:hover {
+    background-color: rgba(226, 147, 147, 0.3);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+}
+.nav-box {
+    display: flex !important;   
+}
+.pfp {
+    border-radius: 100%;
+    background-image: url('components/images/Profile-PNG-File-648504000.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: none;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    min-height: 40px;
+}
+.dropdown-menu {
+    min-width: 200px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0.2,0.2,0.2,0.3);
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.navbar-button {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    margin-left: 0 !important;
+    border: none;
+    background-color: #C62641;
+    color: white;
+}
+
+/*KARUSELI AQEDAN IWYEBA*/
+
+.div-for-carousel-fixation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.test {
+    height: 750px;
+    background-color: #C62641;
+}
+
+.carousel-slide1, .carousel-slide2, .carousel-slide3 {
+    min-height: 550px;
+}
+.carousel-main-div {
+    align-self: center;
+    justify-self: center;
+    max-width: 700px;
+}
+
+.decor-letter {
+    font-size: 200px;
+    position: absolute;
+    color: #ff6881;
+}
+.carousel-title {
+    font-size: 3.7rem;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+    line-height: 1.2;
+}
+.carousel-title:hover {
+    text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+}
+.carousel-sm-text, .carousel-sm-text1 {
+    font-size: 1.4rem;
+    color: white;
+    font-family: Helvetica;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+a {
+    cursor: pointer;
+}
+.carousel-sm-text1:hover {
+    text-decoration: underline;
+}
+.carousel-button-white {
+    background-color: white;
+    color: #C62641;
+    border: none;
+}
+
+.carousel-button-transparent {
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+    border: none;
+}
+
+.carousel-button, .navbar-button {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.carousel-button:hover, .navbar-button:hover {
+    box-shadow: 2px 5px 6px 3px rgba(0.2,0.2,0.2,0.3);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .carousel-title {
+        font-size: 2.4rem;
+    }
+    .carousel-main-div {
+        max-width: 80% !important;
+    }
+    .carousel-sm-text, .carousel-sm-text1 {
+        font-size: 0.8rem;
+    }
+    .carousel-button , .carousel-button-transparent {
+        font-size: 0.7rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 2.5rem;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .fuck-this-div {
+        margin-top: 500px !important;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .carousel-title {
+        font-size: 2rem;
+    }
+    .carousel-button , .carousel-button-transparent {
+        font-size: 0.7rem;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/* MAIN PAGE STARTING HERE */
+
+.fuck-this-div {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin-top: 670px;
+}
+
+.duck-this-div {
+    background-color: white;
+    height: auto;
+    position: relative;
+    top: -80px;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 60px 7px rgba(0,0,0,0.25);
+    z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.home-titlish-thingie {
+    font-size: 1.5rem;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+/*STILL IN MAIN, BUT THIS TIME THE BLOG CARDS HERE*/
+.blog-item {
+    padding: 20px;
+    margin-top: 20px;
+    width: 750px;
+    align-self: center;
+}
+.btn-red {
+    background-color: #C62641 !important;
+    color: white !important;
+    border: none;
+    margin-left: 0%;
+}
+.article-title {
+    font-size: 3.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight:600;
+    text-decoration: none;
+}
+.article-title:hover {
+    color: #C62641;
+}
+.article-text {
+    font-size: 1.2rem;
+    color: #444444;
+}
+
+.truncate-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; 
+    text-overflow: ellipsis;
+    white-space: normal !important;
+  }
+  
+
+@media only screen and (max-width: 1200px) {
+    .blog-item {
+        width: 80% !important;
+    }
+    .article-title {
+        font-size: 2.7rem;
+    }
+    .home-titlish-thingie {
+        font-size: 0.9rem;
+    }
+    .article-text {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .blog-item {
+        width: 90% !important;
+    }
+    .article-title {
+        font-size: 2rem;
+    }
+    .add-blog-bg {
+        padding: 100px 0 !important;
+    }
+}
+/* ADD NEW BLOG STARTING HERE */
+
+.add-blog-bg {
+    background-color: #C62641;
+    height: 100vh !important;
+    position: absolute;
+    padding: 100px;
+    top: 0;
+}
+.text-quill {
+    background-color: white;
+}
+
+
+/*FOOTER HERE*/
+
+.footer-thingie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+    position: relative;
+}
+.footer-title {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.548);
+    font-weight: bold;
+}
+.footer-text {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.548);
+    font-weight: 400;
+}
+.line {
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 70%;
+    height: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-title {
+        font-size: 0.8rem;
+    }
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}
+
+/*DETAILS PAGE STARTS HERE*/
+
+.details-div {
+    margin-top: 140px !important;
+}
+
+.loading-div {
+    background-color: #C62641;
+}
+.btn-del {
+    border: 1px #C62641 solid;
+}
+.name-input-com {
+    max-width: 300px;
+}
+
+/* MAKING A COMMENT CARD BEAUTIFUL STARTS HERE*/
+
+.comment-author {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 3px !important;
+}
+.comment-text {
+    font-size: 1.2rem;
+}
+.com-date {
+    color: #888888;
+    font-size: 13px;
+
+}
+.com-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+div div section {
+    max-width: 90%;
+}
+.comment-item {
+    display: flex;
+    flex-direction: row;
+}
+.pfp-comment {
+    min-height: 50px;
+    background-image: url('components/images/Profile-PNG-File-648504000.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .comment-author {
+        font-size: 17px;
+    }
+    .comment-text {
+        font-size: 0.9rem;
+    }
+    .pfp-comment {
+        min-height: 30px !important;
+    }
+    div div section {
+        max-width: 80% !important;
+    }
+}
+
+/* ABOUT ME PAGE STARTS HERE */
+.about-title {
+    font-size: 1.4rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    
+}
+.pfp-authory {
+    border-radius: 100%;
+    width: 90px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.dfs {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize !important;
+    text-decoration: none;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.dfs:hover, .about-title:hover {
+    color: #C62641;
+}
+.fs{
+    margin-top: 15px;
+}
+.link-img{
+    margin-right: 15px;
+}
+.ushualod-link-img {
+    width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .ushualod-link-img {
+        width: 30px !important;
+    }
+}
+
+/*BLOGS PAGE STARTS HERE*/
+
+.blogs-div {
+    margin-top: 150px !important;
+}
+.article-btn {
+    margin-top: 15px !important;
+}
+.cancel-btn {
+    background-color: white;
+    color:#C62641;
+}
