@@ -1,5 +1,6 @@
 import "../index.css"
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const logOut = () => {
@@ -14,28 +15,28 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navigation">
                 <div className="container-md">
-                    <a className="navbar-brand nav-title" href="/home">Simulation blog</a>
+                    <Link to="/home" className="navbar-brand nav-title">Simulation blog</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item px-3 py-2">
-                                <a className="nav-link " aria-current="page" href="/home">Home</a>
+                                <Link to="/home" className="nav-link " aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item px-3 py-2">
-                                <a className="nav-link" href="/about">About</a>
+                                <Link to="/about" className="nav-link">About</Link>
                             </li>
                             <li className="nav-item px-3 py-2 dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link to="#" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Blogs
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu" >
-                                    <li><a className="dropdown-item" href="/blogs">All</a></li>
-                                    <li><a className="dropdown-item" href="/blogs">Technology</a></li>
-                                    <li><a className="dropdown-item" href="/blogs">Culture</a></li>
-                                    <li><a className="dropdown-item" href="/blogs">Human</a></li>
-                                    <li><a className="dropdown-item" href="/blogs">Business</a></li>
+                                    <li><Link to="/blogs" className="dropdown-item">All</Link></li>
+                                    <li><Link to="blogs" className="dropdown-item">Technology</Link></li>
+                                    <li><Link to="/blogs" className="dropdown-item">Culture</Link></li>
+                                    <li><Link to="/blogs" className="dropdown-item">Human</Link></li>
+                                    <li><Link to="/blogs" className="dropdown-item">Business</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item px-3 py-2 dropdown">
